@@ -20,7 +20,7 @@ const AddAdmin = () => {
       const formData = new FormData();
       formData.append("email", info.email);
   
-      fetch("https://immense-island-65009.herokuapp.com/addAdmin", {
+      fetch("http://localhost:5000/addAdmin", {
         method: "POST",
         body: formData,
       })

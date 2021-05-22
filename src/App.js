@@ -2,8 +2,7 @@ import { createContext, useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-
+  Route
 } from "react-router-dom";
 import './App.css';
 import AddAdmin from './Components/Dashboard/Addadmin/AddAdmin';

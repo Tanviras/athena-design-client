@@ -29,7 +29,7 @@ import Sidebar from '../Dashboard/Sidebar/Sidebar';
         formData.append("description", info.description);
         // formData.append("price", info.price);
     
-        fetch("https://immense-island-65009.herokuapp.com/addService", {
+        fetch("http://localhost:5000/addService", {
           method: "POST",
           body: formData,
         })
@@ -75,7 +75,7 @@ import Sidebar from '../Dashboard/Sidebar/Sidebar';
   
   
           <div className="form-group mb-3">
-            <label htmlFor="description">Service description</label>
+            <label htmlFor="description">Service description in brief</label>
             <input
               onBlur={handleBlur}
               type="text"

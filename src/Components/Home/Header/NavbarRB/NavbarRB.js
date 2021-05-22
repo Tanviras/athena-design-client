@@ -36,15 +36,15 @@ const NavbarRB = () => {
             </Nav.Item>
 
             <Nav.Item className='navBarSpacing'>
-              <HashLink className="nav-link mr-5" to="/#portfolio">
-                Portfolio
+              <HashLink className="nav-link mr-5" to="/#achievements">
+                Achievements
               </HashLink>
             </Nav.Item>
 
 
             <Nav.Item className='navBarSpacing'>
-              <HashLink className="nav-link mr-5" to="/#reviews">
-                Reviews
+              <HashLink className="nav-link mr-5" to="/#offers">
+                Offers
               </HashLink>
             </Nav.Item>
 
@@ -62,7 +62,6 @@ const NavbarRB = () => {
                 Dashboard
               </Link>
             </Nav.Item>
-
 
 
             <Nav.Item className='navBarSpacing resLogBtn'>
