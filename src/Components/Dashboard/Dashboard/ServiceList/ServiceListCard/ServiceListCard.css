@@ -1,0 +1,7 @@
+.service-image {
+    width: 70px;
+  }
+  .serviceList-card {
+    border: none !important;
+    border-radius: 20px !important;
+  }

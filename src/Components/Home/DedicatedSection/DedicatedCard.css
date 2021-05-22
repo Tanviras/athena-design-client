@@ -1,0 +1,51 @@
+.priceCard{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    margin-left: 60px;
+}
+.box-style-price{
+    border: 1px solid none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px grey;
+    padding: 10px;
+    margin-right: 60px;
+}
+@media screen and (max-width: 800px){
+    .priceCard {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        margin-left: 0px;
+    }
+    .box-style-price{
+        border: 1px solid none;
+        border-radius: 5px;
+        box-shadow: 5px 5px 15px grey;
+        padding: 10px;
+        margin-right: 0px;
+    }
+}
+.box-style-price:hover{
+    border: 5px solid gray;
+    box-shadow: 1px 1px 10px aquamarine;
+    font-weight: 800;
+    border:none;
+    
+}
+
+.button-style{
+    border-top-left-radius: 27px;
+    border-bottom-right-radius: 30px;
+    border: none;
+    width: 9rem;
+    height: 3rem;
+    background: linear-gradient(155deg, rgb(75, 212, 110), #1bd6bd, #11c1d3, #0491b4); 
+    display: block;
+    margin: auto;
+}
+
+.button-style:hover{
+    background-image: linear-gradient(to right, rgb(75, 212, 110),rgb(7, 207, 207));
+}
+

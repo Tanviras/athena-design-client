@@ -1,0 +1,21 @@
+h3  {
+        font-family: muli, sans-serif;
+      font-weight: bolder;
+      font-style: normal;
+    }
+.price {
+    background: linear-gradient(155deg, rgb(218, 195, 253), #ffffff );
+}
+.table {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+    /* border-color:linear-gradient(155deg, #1bd6bd, #11c1d3, #0491b4) !important; */
+}
+.tr:hover {
+    border: 5px solid gray;
+    box-shadow: 5px 5px 5px 5px aquamarine;
+    font-weight: 700;
+    border:none;
+    opacity: 1px;
+    z-index: +30;
+}

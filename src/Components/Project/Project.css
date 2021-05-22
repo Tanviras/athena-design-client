@@ -1,0 +1,25 @@
+.project {
+    height:90vh;
+    background: linear-gradient(155deg, rgb(218, 195, 253), #ffffff );
+    
+}
+h2 {
+    font-family: muli, sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  color: #343a40!important;
+}
+p {
+    font-family: muli, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #6c757d!important;
+}
+.btnHire{
+    background: linear-gradient(155deg, #1bd6bd, #11c1d3, #0491b4); 
+      text-decoration: none; 
+      color: white;
+      border-radius: 20px 0px;
+      border: none;
+      padding: 12px;
+  }

@@ -1,0 +1,93 @@
+.headerSec {
+  background: linear-gradient(155deg, rgb(218, 195, 253), #ffffff );
+    height: 100vh;
+}
+
+@media screen and (min-width: 1920px){
+    .headerSec, .project {
+      background: linear-gradient(155deg, rgb(218, 195, 253), #ffffff );
+        height: 70vh;
+    }
+}
+@media screen and (max-width: 1024px){
+  .headerSec {
+    background: linear-gradient(155deg, rgb(218, 195, 253), #ffffff );
+      height: 70vh;
+  }
+  .project{
+    background: linear-gradient(155deg, rgb(218, 195, 253), #ffffff );
+      height: 80vh;
+  }
+}
+
+
+@media screen and (max-width: 736px){
+    .headerSec {
+      background: linear-gradient(155deg, rgb(218, 195, 253), #ffffff );
+        height: 100vh;
+    }
+    .project{
+      background: linear-gradient(155deg, rgb(218, 195, 253), #ffffff );
+        height: 120vh;
+    }
+    .bg-footer{
+      text-align: center;
+    }
+}
+@media screen and (max-width: 380px){
+  .project, .headerSec{
+    background: linear-gradient(155deg, rgb(218, 195, 253), #ffffff );
+      height: 140vh;
+  }
+}
+@media screen and (max-width: 330px){
+  .project, .headerSec{
+    background: linear-gradient(155deg, rgb(218, 195, 253), #ffffff );
+      height: 160vh;
+  }
+}
+.headMain{
+    font-family: muli, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .headMainImg:hover{
+    width: 100% !important;
+  }
+    .headMainImg img:hover {
+      animation: headMainImg .3s linear;
+      /* width: 95% !important; */
+      background: linear-gradient(to right, #020a58, #f5f6ff);      
+    }
+  }
+  @keyframes headMainImg {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.8);
+    }
+  }
+.btnHire{
+  background: linear-gradient(155deg, rgb(75, 212, 110), #1bd6bd, #11c1d3, #0491b4); 
+    text-decoration: none; 
+    color: white;
+    border-radius: 20px 0px;
+    border: none;
+}
+
+    .btnHire:hover {
+      background-image: linear-gradient(to right, rgb(75, 212, 110),rgb(7, 207, 207)); 
+    }
+
+
+    .servicePart{
+    padding: 25px;
+    }
+
+  .servicePart:hover{
+    background-color: white;
+    border-radius: 60px 0px;
+    padding: 25px;
+  }

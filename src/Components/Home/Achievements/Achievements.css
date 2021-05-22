@@ -1,0 +1,122 @@
+.achievement .container {
+    margin-bottom: 70px;
+}
+
+.achv1:hover{
+    background: linear-gradient(155deg, #1bd6bd, #11c1d3, #0491b4);
+    border-radius: 0px 60px 0px 60px ;
+   }
+   .achv2:hover{
+    background: linear-gradient(155deg, #1bd6bd, #11c1d3, #0491b4);
+    border-radius: 60px 0px 60px 0px ;
+   }
+   .achv3:hover{
+    background: linear-gradient(155deg, #1bd6bd, #11c1d3, #0491b4);
+    border-radius: 60px 0px 60px 0px ;
+   }
+   .achv4:hover{
+    background: linear-gradient(155deg, #1bd6bd, #11c1d3, #0491b4);
+    border-radius: 0px 60px 0px 60px ;
+    color: white;
+   }
+
+   .achv{
+       padding: 20px;
+   }
+   
+
+  .emoji {
+      margin: 20px 20px 20px 80px;
+      display: grid;
+  grid-template-columns: repeat(4, 1fr);
+      
+  }
+  .achv1 {
+      background: rgb(209, 252, 252);
+      border-radius: 0px 60px 0px 60px ;
+      margin: 5px;
+      width: 280px;
+      padding: 10px 20px 10px 20px;
+
+  }
+  .achv2 {
+    background:  rgb(209, 252, 252);
+    border-radius: 60px 0px 60px 0px;
+    margin: 5px 20px;
+    width: 280px;
+    padding: 10px 20px 10px 20px;
+}
+.achv3 {
+    background:  rgb(209, 252, 252);
+    border-radius: 60px 0px 60px 0px;
+    margin: 0px 5px;
+    width: 280px;
+    padding: 10px 20px 10px 20px;
+}
+.achv4 {
+    background:  rgb(209, 252, 252);
+    border-radius: 0px 60px 0px 60px;
+    margin: 0px 20px;
+    width: 280px;
+    padding: 10px 20px 10px 20px;
+}
+  .achievement img {
+      height: 60px;
+      margin-top: 40px;
+  }
+  .achievement h2 {
+      padding-top: 25px;
+      padding-left: 25px;
+  }
+ .on {
+      padding-left: 35px;
+  }
+  .achv1:hover h2, .achv1:hover p {
+      color: white !important;
+    }
+   .achv2:hover h2, .achv2:hover p {
+      color: white !important;
+    }
+    .achv3:hover h2, .achv3:hover p {
+      color: white !important;
+    }
+    .achv4:hover h2, .achv4:hover p {
+      color: white !important;
+    }
+    .prize {
+        margin-top: 40px !important;
+    }
+
+    @media screen and (max-width: 1024px){
+        .emoji {
+            margin: 20px 0px 10px 40px;
+            display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        }
+        .achv1, .achv2, .achv3, .achv4{
+            margin: 5px 5px;
+        }
+        
+        .leaf{
+            display: flex;
+            justify-content: center;
+        }
+      
+      }
+
+
+    @media screen and (max-width: 760px){
+        .emoji {
+            margin: 10px;
+            display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        }
+        .achv1, .achv2, .achv3, .achv4{
+            margin: 5px 5px;
+        }
+        .leaf{
+            display: flex;
+            justify-content: center;
+        }
+      
+      }

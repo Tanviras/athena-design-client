@@ -1,0 +1,82 @@
+.nav-font{
+    background-color: none;
+    text-decoration: none;
+}
+.bgMenu{
+  background-image: url("menu.png");
+  border: none;
+  height: 5vh;
+  width: 5vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border: none;
+}
+
+.bgMenu:hover {
+  background: linear-gradient(155deg, #ffffff, #ffffff, #ffffff); 
+  background-image: url("cross.png");
+  border: none;
+  height: 5vh;
+  width: 5vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+}
+
+
+.btnLogin{
+  background: linear-gradient(155deg, rgb(75, 212, 110), #1bd6bd, #11c1d3, #0491b4); 
+  text-decoration: none; 
+  color: white;
+  border-radius: 20px 0px;
+  border: none;
+}
+
+.btnLogin:hover {
+  background: linear-gradient(155deg, #0cc7ae, #22909c, #014353); 
+}
+
+
+@media screen and (max-width: 760px){
+  .nav-font{
+      color: white;
+} 
+   .nav-font ul{
+       display: flex;
+       justify-content: center;
+       text-align: center;
+       
+   }
+   
+/* .nav-font li{
+   color: white;
+   font-weight: bold;
+   text-align: center;
+   padding: 5px 20px;
+   margin: 5px;
+   width: 100%;
+}  */
+
+.nav-position{
+  padding: 5px 10px 5px 10px;
+}
+
+.btnLogin{
+  width: 50%;
+  float: center;
+}
+
+}
+
+.navBarSpacing{
+  padding: 0px 26px;
+}
+
+.logo {
+  width: 150px;
+  height: 60px;
+}
