@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faShoppingCart,
   faHdd,
-  faComments,
   faPlus,
   faSignOutAlt,
   faHome,
@@ -16,6 +15,9 @@ import {
 import './Sidebar.css'; 
 import { HashLink } from "react-router-hash-link";
 import { UserContext } from "../../../../App";
+import firebase from "firebase/app";
+import "firebase/auth";
+import firebaseConfig from "../../../Login/firebase.config";
 
 
 
@@ -32,6 +34,24 @@ useEffect(() => {
     .then((res) => res.json())
     .then((data) => setIsAdmin(data));
 }, []);
+
+if(firebase.apps.length === 0) {
+  firebase.initializeApp(firebaseConfig);
+}
+
+const handleSignOut = () => {
+  return firebase.auth().signOut()
+  .then(res => {
+    const signedOutUser = {
+      name: '',
+      email: '',
+    }
+   setLoggedInUser(signedOutUser);//loggedInUser change korlam
+   sessionStorage.removeItem('token');//sessionStorage khali korlam, duitai korlam karon jekono ekta thaklei seta diye dhuke jawa jabe onno page a without re-login
+  }).catch(err => {
+    // An error happened.
+  });
+}
 
 
   return (
@@ -57,6 +77,8 @@ useEffect(() => {
           </Link>
         </li>
 
+
+        {isAdmin ? (
      
           <div>
             <li>
@@ -78,6 +100,7 @@ useEffect(() => {
             </li>
           </div>
 
+           ) : (
 
           <div>
             <li>
@@ -93,12 +116,13 @@ useEffect(() => {
             </li>
           </div> 
 
-
+           )
+          }
       </ul>
 
       <div>
         <Link to="/" className="text-white">
-          <FontAwesomeIcon icon={faSignOutAlt} /> <span>Logout</span>
+          <FontAwesomeIcon icon={faSignOutAlt} /> <span onClick={handleSignOut}>Logout</span>
         </Link>
       </div>
 

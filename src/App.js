@@ -39,9 +39,9 @@ function App() {
 
           {/* Dashborad part */}
            
-          <Route path="/dashboard">
+          <PrivateRoute path="/dashboard">
             <Dashboard></Dashboard>
-          </Route>
+          </PrivateRoute>
 
           {/* Admin part */}
 

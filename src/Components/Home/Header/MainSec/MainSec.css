@@ -48,27 +48,11 @@
 }
 .headMain{
     font-family: muli, sans-serif;
-  font-weight: 700;
-  font-style: normal;
+    font-weight: 700;
+    font-style: normal;
 }
-@media (prefers-reduced-motion: no-preference) {
-  .headMainImg:hover{
-    width: 100% !important;
-  }
-    .headMainImg img:hover {
-      animation: headMainImg .3s linear;
-      /* width: 95% !important; */
-      background: linear-gradient(to right, #020a58, #f5f6ff);      
-    }
-  }
-  @keyframes headMainImg {
-    from {
-      transform: scale(1);
-    }
-    to {
-      transform: scale(0.8);
-    }
-  }
+
+  
 .btnHire{
   background: linear-gradient(155deg, rgb(75, 212, 110), #1bd6bd, #11c1d3, #0491b4); 
     text-decoration: none; 
@@ -90,4 +74,16 @@
     background-color: white;
     border-radius: 60px 0px;
     padding: 25px;
+  }
+
+  .animated-card {
+    /* border-radius: 5px; */
+    /* box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3); */
+    transition: box-shadow 0.5s;
+    will-change: transform;
+    /* border: 15px solid white; */
+  }
+  
+  .animated-card:hover {
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
   }
