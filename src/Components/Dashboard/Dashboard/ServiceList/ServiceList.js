@@ -12,7 +12,7 @@ const ServiceList = () => {
  //from collection of 'orders'
  useEffect(() => {
   fetch(
-    "https://immense-island-65009.herokuapp.com/servicesOrdered?email=" +
+    "http://localhost:5000/servicesOrdered?email=" +
       loggedInUser.email
   )
     .then((res) => res.json())
@@ -43,10 +43,9 @@ const containerStyle = {
 
     <div className="row">
       {
-      servicesList.map(srvcList => (
-        <ServiceListCard key={srvcList._id} service={srvcList}>
-        </ServiceListCard>
-      ))
+      servicesList.map(srvcList => 
+      (<ServiceListCard key={srvcList._id} service={srvcList}></ServiceListCard>)
+      )
       }
     </div>
 

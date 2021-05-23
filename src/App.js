@@ -9,10 +9,12 @@ import AddAdmin from './Components/Dashboard/Addadmin/AddAdmin';
 import AddService from './Components/Dashboard/AddService/AddService';
 import Dashboard from './Components/Dashboard/Dashboard/Dashboard';
 import ServiceList from './Components/Dashboard/Dashboard/ServiceList/ServiceList';
+import ServiceListAdmin from './Components/Dashboard/Dashboard/ServiceListAdmin/ServiceListAdmin';
+import Order from './Components/Dashboard/Order/Order';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import NotFound from './Components/NotFound/NotFound';
-// import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 
 export const UserContext = createContext();
 
@@ -35,22 +37,36 @@ function App() {
             <Login></Login>
           </Route> 
 
-          <Route path="/addService">
-            <AddService></AddService>
+          {/* Dashborad part */}
+           
+          <Route path="/dashboard">
+            <Dashboard></Dashboard>
           </Route>
 
-          <Route path="/serviceList">
-            <ServiceList></ServiceList>
+          {/* Admin part */}
+
+          <Route path="/addService">
+            <AddService></AddService>
           </Route>
 
           <Route path="/addAdmin">
             <AddAdmin></AddAdmin>
           </Route>
 
-          
-          <Route path="/dashboard">
-            <Dashboard></Dashboard>
+          <Route path="/serviceListAdmin">
+            <ServiceListAdmin></ServiceListAdmin>
           </Route>
+
+          {/* Client part */}
+
+          <PrivateRoute path="/serviceRegister/:serviceId">
+            <Order></Order>
+          </PrivateRoute>
+
+          <Route path="/serviceList">
+            <ServiceList></ServiceList>
+          </Route>
+
 
           <Route path="*">
             <NotFound></NotFound>

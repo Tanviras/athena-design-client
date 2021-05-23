@@ -1,12 +1,10 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyB4ijWwmOJz78IB2LxFhWSZXrpXYappJvM",
-    authDomain: "athena-design-38283.firebaseapp.com",
-    databaseURL: "https://athena-design-38283.firebaseio.com",
-    projectId: "athena-design-38283",
-    storageBucket: "athena-design-38283.appspot.com",
-    messagingSenderId: "304951081194",
-    appId: "1:304951081194:web:58265e9b6343bc0ae1ff93"
-  };
-
+  apiKey: "AIzaSyBbMOnbezcFVaNh3xRcaH9U-Rr4CKDaXV4",
+  authDomain: "athena-894b7.firebaseapp.com",
+  projectId: "athena-894b7",
+  storageBucket: "athena-894b7.appspot.com",
+  messagingSenderId: "366839081174",
+  appId: "1:366839081174:web:28268dfd2b2de4c7a34177"
+};
   
-  export default firebaseConfig;
+export default firebaseConfig;

@@ -8,16 +8,11 @@ import {
   faHdd,
   faComments,
   faPlus,
-  faCog,
   faSignOutAlt,
   faHome,
   faGripHorizontal,
   faUserPlus,
-  faUsers,
-  faList,
 } from "@fortawesome/free-solid-svg-icons";
-import { faFileAlt } from "@fortawesome/free-regular-svg-icons";
-// import { UserContext } from "../../../App";
 import './Sidebar.css'; 
 import { HashLink } from "react-router-hash-link";
 import { UserContext } from "../../../../App";
@@ -28,15 +23,15 @@ const Sidebar = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   const [isAdmin, setIsAdmin] = useState();
 
-// useEffect(() => {
-//   fetch("https://polar-springs-72792.herokuapp.com/isAdmin", {
-//     method: "POST",
-//     headers: { "content-type": "application/json" },
-//     body: JSON.stringify({ email: loggedInUser.email }),
-//   })
-//     .then((res) => res.json())
-//     .then((data) => setIsAdmin(data));
-// }, []);
+useEffect(() => {
+  fetch("http://localhost:5000/isAdmin", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ email: loggedInUser.email }),
+  })
+    .then((res) => res.json())
+    .then((data) => setIsAdmin(data));
+}, []);
 
 
   return (
@@ -75,18 +70,13 @@ const Sidebar = () => {
                 <FontAwesomeIcon icon={faUserPlus} /> <span>Add An Admin</span>
               </Link>
             </li>
-          </div>
-
-  
-          <div>
 
             <li>
-              <Link to="/serviceList" className="text-white" style={{ textDecoration: 'none' }}>
+              <Link to="/serviceListAdmin" className="text-white" style={{ textDecoration: 'none' }}>
                 <FontAwesomeIcon icon={faHdd} /> <span>Service List</span>
               </Link>
             </li>
           </div>
-
 
 
           <div>
@@ -99,12 +89,6 @@ const Sidebar = () => {
             <li>
               <Link to="/serviceList" className="text-dark" style={{ textDecoration: 'none' }}>
                 <FontAwesomeIcon icon={faHdd} /> <span>Service List</span>
-              </Link>
-            </li>
-
-            <li>
-              <Link to="/postReview" className="text-dark" style={{ textDecoration: 'none' }}>
-                <FontAwesomeIcon icon={faComments} /> <span>Review</span>
               </Link>
             </li>
           </div> 

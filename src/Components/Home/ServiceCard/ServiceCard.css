@@ -1,0 +1,9 @@
+.servicePart{
+    padding: 25px;
+    }
+
+.servicePart:hover{
+    background-color: white;
+    border-radius: 60px 0px;
+    padding: 25px;
+  }
