@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { UserContext } from "../../../App";
 import Sidebar from "../../Dashboard/Dashboard/Sidebar/Sidebar";
+import './Dashboard.css';
 
 const Dashboard = () => {
   const containerStyle = {
@@ -18,8 +19,7 @@ const Dashboard = () => {
       </div>
       
 
-      <div className="col-md-10 p-4 pr-5 ml-auto col-sm-10">
-        <div>
+      <div className="col-md-10 p-4 pr-5 ml-auto col-sm-10 dashboard">
           <center>
             <p
               style={{ fontSize: 60, fontWeight: 700 }}
@@ -29,7 +29,6 @@ const Dashboard = () => {
             </p>
             <p className="text-center">Take a tour to sidebar to explore your dashboard</p>
           </center>
-        </div>
       </div>
 
 

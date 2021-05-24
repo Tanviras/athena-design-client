@@ -38,21 +38,22 @@ const MainSec = () => {
                     <button className="btn text-light w-50 btnHire">See Pricing</button>
                 </div>
 
-
                 <animated.div
                     className="animated-card col-md-6 offset-md-1 p-3 headMainImg"
                     onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
                     onMouseLeave={() => set({ xys: [0, 0, 1] })}
                     style={{ transform: prop.xys.interpolate(trans), marginTop: 40 }}
                 >
-                    
-                <div>
-                    <StyleRoot>
-                        <img className="w-100 img-fluid" src={frame} alt="" style={styles.bounce} />
-                    </StyleRoot>
-                </div>
+
+                    <div>
+                        <StyleRoot>
+                            <img className="w-100 img-fluid" src={frame} alt="" style={styles.bounce} />
+                        </StyleRoot>
+                    </div>
 
                 </animated.div>
+
+
 
             </div>
         </div>

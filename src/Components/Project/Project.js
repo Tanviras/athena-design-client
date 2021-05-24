@@ -26,21 +26,19 @@ const Project = () => {
 
 
                     <animated.div
-                        className="animated-card col-md-6 p-3 headMainImg"
+                        className="animated-card col-md-6 headMainImg"
                         onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
                         onMouseLeave={() => set({ xys: [0, 0, 1] })}
                         style={{ transform: prop.xys.interpolate(trans), marginTop: 40 }}
                     >
-
                         <div>
                             <img className="w-100 img-fluid" src={project} alt="" />
                         </div>
-
                     </animated.div>
 
 
 
-                    <div style={{ marginTop: 100 }} className="col-md-6 col-sm-12 ">
+                    <div style={{ marginTop: 100 }} className="col-md-6 col-sm-12 projectImg">
                         <h2 style={{ marginLeft: 10, padding: 20 }}>Stay Running and Project </h2>
                         <p style={{ marginLeft: 10, padding: 20 }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at iaculis eros, sit amet elementum eros. Duis eget efficitur tellus, ultrices hendrerit nulla. Duis ac varius ex, id aliquam nunc. Pellentesque pretium, turpis eget mollis hendrerit, elit mauris efficitur magna, quis fermentum quam turpis eu purus.</p>
                         <button style={{ marginLeft: 30 }} className="btnHire">Contact Us</button>

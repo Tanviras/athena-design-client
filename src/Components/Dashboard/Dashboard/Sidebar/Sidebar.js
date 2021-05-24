@@ -104,13 +104,13 @@ const handleSignOut = () => {
 
           <div>
             <li>
-              <HashLink to="/#services" className="text-dark" style={{ textDecoration: 'none' }}>
-                <FontAwesomeIcon icon={faShoppingCart} /> <span>Order</span>
+              <HashLink to="/#services" className="text-white" style={{ textDecoration: 'none' }}>
+                <FontAwesomeIcon icon={faShoppingCart} /> <span>Order service</span>
               </HashLink>
             </li>
 
             <li>
-              <Link to="/serviceList" className="text-dark" style={{ textDecoration: 'none' }}>
+              <Link to="/serviceList" className="text-white" style={{ textDecoration: 'none' }}>
                 <FontAwesomeIcon icon={faHdd} /> <span>Service List</span>
               </Link>
             </li>
@@ -121,7 +121,7 @@ const handleSignOut = () => {
       </ul>
 
       <div>
-        <Link to="/" className="text-white">
+        <Link to="/" className="text-white" style={{ textDecoration: 'none' }}>
           <FontAwesomeIcon icon={faSignOutAlt} /> <span onClick={handleSignOut}>Logout</span>
         </Link>
       </div>

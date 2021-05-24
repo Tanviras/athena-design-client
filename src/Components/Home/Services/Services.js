@@ -17,8 +17,8 @@ const Services = () => {
 
     return (
         <div className="container mb-5" id="review">
-            <h3 align="center" className="text-dark"><b> What we do </b></h3>
-            <h6 className="text-secondary text-center">Our main focus is make to make the User Experience very simple and easy. Simplicity is our Strength.</h6>
+            <h3 align="center" className="text-dark"><b>Our services</b></h3>
+            <h6 className="text-secondary text-center">Select our services while ordering from dashboard</h6>
 
             <div className="d-flex justify-content-center mt-3">
                 <div className="row mx-auto w-100 mt-2 pt-4">

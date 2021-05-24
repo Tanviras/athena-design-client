@@ -11,7 +11,7 @@ const NavbarRB = () => {
         <Navbar bg="transparent" expand="lg">
 
 
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="#home" style={{marginRight:"62px"}}>
           <Link to="/home">
           <img style={{ width: "100px" }} src={logo} alt=""/>
           </Link>
