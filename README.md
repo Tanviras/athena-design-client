@@ -1,7 +1,7 @@
 <h1>Athena Design</h1>
 
 <p>
-Creative Agency is a full-stack site that serves the purposes of a digital service providing agency.
+Athena Design is a full-stack site that serves the purposes of a digital service providing agency.
 </p>
 
 <h2>The source code is uploaded at two parts in two repositories.</h2>
