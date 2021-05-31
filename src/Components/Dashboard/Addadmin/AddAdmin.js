@@ -20,7 +20,7 @@ const AddAdmin = () => {
       const formData = new FormData();
       formData.append("email", info.email);
   
-      fetch("http://localhost:5000/addAdmin", {
+      fetch("https://polar-cove-69023.herokuapp.com/addAdmin", {
         method: "POST",
         body: formData,
       })

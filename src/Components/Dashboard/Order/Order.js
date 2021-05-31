@@ -13,7 +13,7 @@ const Order = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
     useEffect(() => {
-        fetch("http://localhost:5000/services")
+        fetch("https://polar-cove-69023.herokuapp.com/services")
           .then((res) => res.json())
           .then((data) => {
     
@@ -53,7 +53,7 @@ const Order = () => {
         formData.append("price", info.price);
         formData.append("file", file);
     
-        fetch("http://localhost:5000/addOrder", {
+        fetch("https://polar-cove-69023.herokuapp.com/addOrder", {
           method: "POST",
           body: formData,
         })

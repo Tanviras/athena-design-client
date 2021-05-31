@@ -29,7 +29,7 @@ import Sidebar from '../Dashboard/Sidebar/Sidebar';
         formData.append("description", info.description);
         // formData.append("price", info.price);
     
-        fetch("http://localhost:5000/addService", {
+        fetch("https://polar-cove-69023.herokuapp.com/addService", {
           method: "POST",
           body: formData,
         })

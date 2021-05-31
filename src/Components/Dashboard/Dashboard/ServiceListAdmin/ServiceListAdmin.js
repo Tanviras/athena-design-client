@@ -6,7 +6,7 @@ const ServiceListAdmin = () => {
     const [servicesList, setServicesList] = useState([]);
 
     useEffect(() => {
-      fetch("http://localhost:5000/allServicesOrdered")
+      fetch("https://polar-cove-69023.herokuapp.com/allServicesOrdered")
         .then((res) => res.json())
         .then((data) => setServicesList(data));
     }, []);

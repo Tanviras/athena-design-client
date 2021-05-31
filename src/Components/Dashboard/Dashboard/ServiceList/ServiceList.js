@@ -12,7 +12,7 @@ const ServiceList = () => {
  //from collection of 'orders'
  useEffect(() => {
   fetch(
-    "http://localhost:5000/servicesOrdered?email=" +
+    "https://polar-cove-69023.herokuapp.com/servicesOrdered?email=" +
       loggedInUser.email
   )
     .then((res) => res.json())
