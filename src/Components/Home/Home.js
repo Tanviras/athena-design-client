@@ -13,20 +13,28 @@ const Home = () => {
         <div>
             <Header></Header>
 
-            <div className="bg-light p-3">
+            <div className="bg-light p-3" id='services'>
             <Services></Services>
             </div>
 
             <Project></Project>
-            <Achievements></Achievements>
 
-            <div className="bg-light">
+            <div id="achievements">
+            <Achievements></Achievements>
+            </div>
+            
+
+            <div className="bg-light" id='offers'>
             <DedicatedSection />
-            <SearchBox/>
-            <Footer/>
             </div>
 
-        </div>
+            <SearchBox/>
+
+            <div id='footer'>
+            <Footer/>
+            </div>
+       
+            </div>
     );
 };
 

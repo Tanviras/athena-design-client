@@ -1,9 +1,9 @@
 import React from 'react';
 import './NavbarRB.css';
 import logo from '../../../../images/logos/logo.png'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { Nav, Navbar} from "react-bootstrap";
-import { HashLink } from "react-router-hash-link";
+import { HashLink as Link } from "react-router-hash-link";
 
 const NavbarRB = () => {
     return (
@@ -30,29 +30,29 @@ const NavbarRB = () => {
             </Nav.Item>
 
             <Nav.Item className='navBarSpacing'>
-              <HashLink className="nav-link mr-5" to="/#services">
+              <Link className="nav-link mr-5" to="/#services">
                Services
-              </HashLink>
+              </Link>
             </Nav.Item>
 
             <Nav.Item className='navBarSpacing'>
-              <HashLink className="nav-link mr-5" to="/#achievements">
+              <Link className="nav-link mr-5" to="/#achievements">
                 Achievements
-              </HashLink>
+              </Link>
             </Nav.Item>
 
 
             <Nav.Item className='navBarSpacing'>
-              <HashLink className="nav-link mr-5" to="/#offers">
+              <Link className="nav-link mr-5" to="/#offers">
                 Offers
-              </HashLink>
+              </Link>
             </Nav.Item>
 
 
             <Nav.Item className='navBarSpacing'>
-              <HashLink className="nav-link mr-5" to="/#footer">
+              <Link className="nav-link mr-5" to="/#footer">
                 Contacts
-              </HashLink>
+              </Link>
             </Nav.Item>
 
 
